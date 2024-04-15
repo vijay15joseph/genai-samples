@@ -33,10 +33,13 @@ Enabling CloudRun with access to Vertex AI and Gemini APIs in Google Cloud Proje
         --role="roles/iam.serviceAccountUser"
 
 **Build and deploy CloudRun** 
+    # Set the environment vars based on your environment
     PROJECT_ID=<REPLACE_WITH_YOUR_PROJECT_ID>
     REGION=<REPLACE_WITH_YOUR_GCP_REGION_NAME>
     AR_REPO=<REPLACE_WITH_YOUR_AR_REPO_NAME>
     SERVICE_NAME=genai-text-demo
+
+    # Build and deploy CloudRun`
     gcloud artifacts repositories create $AR_REPO --location=$REGION --repository-format=Docker
     gcloud auth configure-docker $REGION-docker.pkg.dev
     gcloud builds submit --tag $REGION-docker.pkg.dev/$PROJECT_ID/$AR_REPO/$SERVICE_NAME

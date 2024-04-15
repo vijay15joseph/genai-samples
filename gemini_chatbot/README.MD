@@ -3,7 +3,9 @@ This will start a web server on port 7860 that will serve the chatbot. You can t
 
 ## Setup
 Enabling CloudRun with access to Vertex AI and Gemini APIs in Google Cloud Project
+
 **Cloud Shell commands to create Service Account and provide IAM access for CloudRUn to access Vertex AI and Gemini APIs** 
+
     # Set the environment vars based on your environment
     PROJECT_ID=<YOUR_PROJECT_ID>
     EMAIL=<YOUR_USER_ACCOUNT>

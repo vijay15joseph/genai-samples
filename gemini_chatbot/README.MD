@@ -33,6 +33,7 @@ Enabling CloudRun with access to Vertex AI and Gemini APIs in Google Cloud Proje
         --role="roles/iam.serviceAccountUser"
 
 **Build and deploy CloudRun** 
+
     # Set the environment vars based on your environment
     PROJECT_ID=<REPLACE_WITH_YOUR_PROJECT_ID>
     REGION=<REPLACE_WITH_YOUR_GCP_REGION_NAME>
